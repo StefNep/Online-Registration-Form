@@ -1,8 +1,8 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
 body {
     font-family: 'DM Sans', sans-serif;
@@ -10,7 +10,7 @@ body {
     max-width: 768px;
 }
 
-.indent {
+.container {
   padding: 0 15px;
 }
 
@@ -54,7 +54,7 @@ margin-top: 2px;
 margin-bottom: 25px;
 }
 
-fieldset {
+.contact {
   display: flex;
   flex-direction: column;
   border: none;
@@ -76,6 +76,17 @@ label {
   color: grey;
 }
 
+::placeholder {
+  color: rgb(194, 194, 194);
+  font-size: small;
+  font-style: italic;
+  padding-left: 76%;
+}
+
+select {
+  color: grey;
+}
+
 #zip {
  max-width: 45%;
 }
@@ -88,6 +99,7 @@ label {
 
 .newsletter {
   display: block;
+  border: none;
 }
 
 textarea {
@@ -118,4 +130,28 @@ button {
   font-size: small;
   text-align: center;
   margin: 30px 0;
+}
+
+/* MEDIA QUERY */
+
+@media (min-width: 768px) {
+
+  body {
+    max-width: 5000px;
+  }
+
+.container {
+  width: 550px;
+  margin: auto;
+}
+
+::placeholder {
+  padding-left: 88%;
+}
+
+.contact legend,
+.contact label {
+  flex-basis: ;
+}
+
 }
