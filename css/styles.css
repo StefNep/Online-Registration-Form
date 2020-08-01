@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: white;
+    max-width: 768px;
+    padding: 0 15px;
+}
+
+header {
+text-align: center;
+border-bottom: solid black 5px;
+padding: 10px 0;
+}
+
+.heading {
+  color: white;
+  background-color: black;
+  padding: 15px 0;
+  font-weight: bold; 
+  font-size: 18px;
+}
+
+.signup {
+  padding: 25px 0;
+}
+
+.signup p {
+  color: grey;
+  padding-top: 5px;
+}
+
+.line1 {
+  border-bottom: solid black 2px;
+  padding-bottom: 3px;
+}
+
+legend {
+font-weight: bold;
+font-size: 1.5em;
+padding-top: 25px;
+margin-top: 2px;
+margin-bottom: 25px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+input {
+  background-color: rgb(225, 225, 225);
+  padding: 15px 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.15em;
+}
+
+label {
+  color: grey;
+}
+
+#zip {
+ max-width: 45%;
+}
+
+.line2 {
+  border-bottom: solid black 2px;
+  padding-top: 30px;
+  margin-bottom: 10px;
+}
