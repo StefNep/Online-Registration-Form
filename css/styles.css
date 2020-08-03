@@ -6,12 +6,12 @@
   
 body {
     font-family: 'DM Sans', sans-serif;
-    background-color: white;
     max-width: 768px;
 }
 
 .container {
   padding: 0 15px;
+  background-color: rgb(255, 239, 247);
 }
 
 header {
@@ -38,7 +38,6 @@ header {
 
 .signup p {
   color: grey;
-  padding-top: 5px;
 }
 
 .line1 {
@@ -47,26 +46,27 @@ header {
 }
 
 legend {
-font-weight: bold;
-font-size: 1.5em;
-padding-top: 25px;
-margin-top: 2px;
-margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 30px 0;
 }
 
 .contact {
+  border: none;
+}
+
+.flex-pair {
   display: flex;
   flex-direction: column;
-  border: none;
 }
 
 .contact input, 
 select {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(255, 255, 255);
   padding: 15px 15px;
   margin-top: 5px;
   margin-bottom: 20px;
-  border: none;
+  border: solid 2px rgb(252, 199, 216);
   border-radius: 5px;
   width: 100%;
   font-size: 1.15em;
@@ -80,7 +80,7 @@ label {
   color: rgb(194, 194, 194);
   font-size: small;
   font-style: italic;
-  padding-left: 76%;
+  padding-left: 80%;
 }
 
 select {
@@ -88,12 +88,12 @@ select {
 }
 
 #zip {
- max-width: 45%;
+  max-width: 40%;
 }
 
 .line2 {
   border-bottom: solid black 2px;
-  padding-top: 30px;
+  padding-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -103,10 +103,10 @@ select {
 }
 
 textarea {
-  background-color: rgb(232, 232, 232);
+  background-color: rgb(255, 255, 255);
   padding: 15px 15px;
   margin-bottom: 30px;
-  border: none;
+  border: solid 2px rgb(252, 199, 216);
   border-radius: 5px;
   width: 100%;
   height: 120px;
@@ -115,7 +115,7 @@ textarea {
 
 button {
   color: white;
-  background-color: rgb(10, 176, 179);
+  background-color: rgb(250, 79, 153);
   padding: 15px 15px;
   width: 100%;
   border: none;
@@ -132,6 +132,22 @@ button {
   margin: 30px 0;
 }
 
+select:focus,
+textarea:focus, 
+input:focus {
+  outline: none;
+  background-color: rgb(233, 233, 233);
+  border: solid 2px rgb(250, 79, 153);
+}
+
+select,
+textarea, 
+input {
+  transition: 1.5s ease-out;
+}
+
+
+
 /* MEDIA QUERY */
 
 @media (min-width: 768px) {
@@ -141,17 +157,31 @@ button {
   }
 
 .container {
-  width: 550px;
+  width: 700px;
   margin: auto;
 }
 
 ::placeholder {
-  padding-left: 88%;
+  padding-left: 83%;
 }
 
-.contact legend,
-.contact label {
-  flex-basis: ;
+.flex-pair {
+  flex-direction: row;
+  justify-content: space-between;
 }
+
+.contact input,
+.contact select {
+  width: 70%;
+}
+
+.flex-pair label {
+  padding-top: 23px;
+}
+
+#zip {
+  max-width: 30%;
+  margin-right: 40%;
+ }
 
 }

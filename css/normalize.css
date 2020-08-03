@@ -347,3 +347,12 @@
   [hidden] {
     display: none;
   }
+/* My Own */
+
+  fieldset {
+    border: none;
+  }
+
+  input {
+    border: none;
+  }
